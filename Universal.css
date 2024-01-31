@@ -1,0 +1,78 @@
+*{
+      margin: 0px;
+      padding: 0px;}
+body{
+      background-color: #424242;
+      color: #ffffff;
+      font-family: 'Lexend', Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;}
+h1, h2, h3, h4, h5, h6{
+      color: #ffffff;}
+.badge{
+      background-color: #00b18c;
+      font-size: 1em;
+      margin: 0px 0px 10px 0px;}
+
+
+
+header{
+      background-color: #212121;
+      padding: 2vw 0vw 2vw 0vw;}
+header .row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;}
+.navButton{
+      background-color: #00b18c;
+      font-weight: 500;
+      border: none;}
+
+
+
+#hero h1{
+      color: #00b18c;
+}
+
+#services{
+      margin: 5vh 0vh 0vh 0vh;}
+
+.card{
+      background-color: #00b18c;
+      border: none;}
+
+#about{
+      margin: 5vw 0vw 0vw 0vw;
+      padding: 2.5vw;
+}
+
+
+#contact input{
+      width: 100%;
+      padding: .5vw;
+      border-radius: 5px;}
+#contact textarea{
+      width: 100%;
+      padding: .5vw;
+      border-radius: 5px;}
+.formInputs{
+      display: flex;
+      flex-direction: column;}
+
+
+
+
+
+
+footer{
+      background-color: #212121;
+      padding: 2vw 2vw 2vw 2vw;
+      margin: 0vw 0vw 0vw 0vw;
+}
+.fixedFooter{
+      background-color: #212121;
+      padding: 2vw 2vw 2vw 2vw;
+      margin: 0vw 0vw 0vw 0vw;
+      position:absolute;
+      bottom: 0px;
+      width: 100%;
+}
