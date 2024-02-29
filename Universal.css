@@ -4,15 +4,39 @@
 body{
       background-color: #424242;
       color: #ffffff;
-      font-family: 'Lexend', Arial, Helvetica, sans-serif;
-      font-size: 1.2rem;}
+      font-family: Lexend, Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;;}
 h1, h2, h3, h4, h5, h6{
-      color: #ffffff;}
+      color: #ffffff;
+
+      }
 .badge{
       background-color: #00b18c;
       font-size: 1em;
       margin: 0px 0px 10px 0px;}
+a:link{
+      text-decoration: none;
+}
 
+
+.mobileNav{
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      background-color: #212121;
+      z-index: 10; 
+      padding: 1vmax;
+}   
+@media screen and (max-width:576px){
+      .desktopElement{
+            display: none;
+      }
+      .mobileNav{
+            
+            justify-content: space-around;
+            align-items: center;
+      }
+}
 
 
 header{
@@ -24,44 +48,122 @@ header .row{
       align-items: center;}
 .navButton{
       background-color: #00b18c;
-      font-weight: 500;
+      font-weight: 400;
       border: none;}
-
-
+.navButton span{
+      font-size: 2.5em;
+}
+.mainNav .logo{
+      width: 66%;
+}
+.mainNav img{
+      width: 48px;
+}
 
 #hero h1{
       color: #00b18c;
 }
 
+
+
+
+
+
 #services{
       margin: 5vh 0vh 0vh 0vh;}
 
-.card{
-      background-color: #00b18c;
-      border: none;}
+.cardButton{
+      display: flex;
+      align-items: center;
+}
+
+
+
 
 #about{
       margin: 5vw 0vw 0vw 0vw;
       padding: 2.5vw;
 }
 
+.accordion {
+      --bs-accordion-color: var(--bs-body-color);
+      --bs-accordion-bg: var(--bs-body-bg);
+      --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+      --bs-accordion-border-color: none;
+      --bs-accordion-border-width: var(--bs-border-width);
+      --bs-accordion-border-radius: var(--bs-border-radius);
+      --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+      --bs-accordion-btn-padding-x: 1.25rem;
+      --bs-accordion-btn-padding-y: 1rem;
+      --bs-accordion-btn-color: var(--bs-body-color);
+      --bs-accordion-btn-bg: var(--bs-accordion-bg);
+      --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      --bs-accordion-btn-icon-width: 1.25rem;
+      --bs-accordion-btn-icon-transform: rotate(-180deg);
+      --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+      --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23052c65'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      --bs-accordion-btn-focus-border-color: #00b18c;
+      --bs-accordion-btn-focus-box-shadow: none;
+      --bs-accordion-body-padding-x: 1.25rem;
+      --bs-accordion-body-padding-y: 1rem;
+      --bs-accordion-active-color: #ffffff;
+      --bs-accordion-active-bg: #212121;
+  }
+.accordion-item{
+      background-color: #212121;
+      color: #ffffff;
+}
+button.accordion-button{
+      background: #212121;
+      border: 3px solid #00b18c;
+      color: #00b18c;
+      margin: 10px 0px 10px 0px;
+}
 
-#contact input{
-      width: 100%;
-      padding: .5vw;
-      border-radius: 5px;}
-#contact textarea{
-      width: 100%;
-      padding: .5vw;
-      border-radius: 5px;}
-.formInputs{
+
+
+.productBenefits h3{
+      color: #00b18c;
+}
+.productContainer{
+      width: 95vw;
+      margin: auto;
+      border-radius: 16px;
+    
+}
+.productContainer img{
+      
+}
+.salesCard{
+
+      border: 3px solid #00b18c;
+}
+
+
+
+#socialNavCard{
+      background-color: #00b18c;
       display: flex;
-      flex-direction: column;}
-
-
-
-
-
+      flex-direction: column;
+      padding: 5vw;
+      text-align: center;
+      
+      
+}
+.socialNav{
+      text-align: center;
+}
+.socialNav a{
+      color: #ffffff;
+      text-decoration: none;
+      border: 3px solid #ffffff;
+      padding: 10px 20px 10px 20px;
+      margin: 5px;
+}
+.socialNav a:hover{
+      background-color: #ffffff;
+      color: #000000;
+}
 
 footer{
       background-color: #212121;

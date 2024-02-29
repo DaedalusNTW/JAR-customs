@@ -3,23 +3,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Orpheus</title>
+	<meta name="description" content="SW Washington's Premier Powder Coating & Cerakote Experts">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link href="Universal.css" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-2">
+				<div class="col-3 col-lg-2">
 					<a href="index.html"><img src="Assets/Logo.png" class="img-fluid" alt=""></a>
 				</div>
-				<div class="col-1 dropdown">
+				<div class="col-1 dropdown desktopElement">
 					<button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
-						Menu <span class="material-symbols-outlined">menu</span>
+						<span class="material-symbols-outlined">menu</span>
 					</button>
 					<ul class="dropdown-menu">
 						<li class="dropdown-item"><a href="index.html">Home</a></li>
@@ -29,6 +31,18 @@
 				</div>
 			</div>
 		</div>
+		<nav class="mobileNav d-sm-none d-flex">
+			<a href="contact.html">Contact</a>
+			<div class="col-1 dropdown">
+				<button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
+					Menu <span class="material-symbols-outlined">menu</span>
+				</button>
+				<ul class="dropdown-menu">
+					<li class="dropdown-item"><a href="index.html">Home</a></li>
+					<li class="dropdown-item"><a href="Information center.html">Information center</a></li>
+				</ul>
+			</div>
+		</nav>
 	</header>
 	<main>
 		<section id="hero">
@@ -40,105 +54,96 @@
 				  <div class="col-lg-6">
 				    <h1 class="display-5 fw-bold lh-1 mb-3">Performance coatings for automotive parts.</h1>
 				    <p class="lead">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-					Ab eius neque suscipit, nulla voluptatem sint nisi amet dolorem, exercitationem 
-					quasi tempora corrupti natus fugiat optio. Eum et odit voluptate earum.</p>
+					Transform the look, feel, and performance of your metal parts with powder coating or cerakoting. At JAR customs, 
+					we're passionate about empowering your vision with uncompromising durability, flawless finishes, and unparalleled service.</p>
 				    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-					<a href = "Contact.html" class="btn btn-primary btn-lg px-4 me-md-2">Lorem Ipsum</a>
-					<a href = "#" class="btn btn-outline-secondary btn-lg px-4">Default</a>
+					<a href = "Contact.html" class="btn btn-primary btn-lg px-4 me-md-2">Get Started</a>
+					<a href = "Information center.html" class="btn btn-outline-secondary btn-lg px-4">FAQ</a>
 				    </div>
 				  </div>
 				</div>
 			    </div>
 		</section>
-		<section id="services">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="card">
-							<img Class="card-img-top" src="./Assets/Powder coat.png" alt="">
-							<h3>Powder coat</h3>
-							<div class="card-body">
-								<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-								Quia, necessitatibus? Quidem eaque adipisci eligendi iusto.
-								</p>
+		<div class="container px-4 py-5" id="custom-cards">
+			<h2 class="pb-2 border-bottom">What We Do</h2>
+				<div class="row row align-items-stretch g-4 py-5" style="height: 40vh;">
+			 		<div class="col">
+			    			<div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+							<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+								<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-light">Powder coating</h3>
+								<strong>Uncompromising Durability, Impeccable Finish.</strong>
+								<ul class="d-flex list-unstyled mt-auto">
+									<li class="me-auto">	
+										<a href="powder coat.html" class="cardButton"><span class="material-symbols-outlined">info</span>More info</a>
+									</li>
+									<li class="d-flex align-items-center me-3">
+										<svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+									</li>
+								</ul>
 							</div>
+			    			</div>
+			  		</div>
+					  <div class="col">
+						<div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+						  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+							  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-light">Cerakote</h3>
+							  <strong>Invest in Lasting Performance and Protection.</strong>
+							  <ul class="d-flex list-unstyled mt-auto">
+								  <li class="me-auto">
+									<a href="cerakote.html" class="cardButton"><span class="material-symbols-outlined">info</span>More info</a>
+								  </li>
+								  <li class="d-flex align-items-center me-3">
+									  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+									
+								  </li>
+							  </ul>
+						  </div>
 						</div>
-					</div>
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="card">
-							<img Class="card-img-top" src="./Assets/Powder coat.png" alt="">
-							<h3>Powder coat</h3>
-							<div class="card-body">
-								<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-								Quia, necessitatibus? Quidem eaque adipisci eligendi iusto.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="card">
-							<img Class="card-img-top" src="./Assets/Powder coat.png" alt="">
-							<h3>Powder coat</h3>
-							<div class="card-body">
-								<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-								Quia, necessitatibus? Quidem eaque adipisci eligendi iusto.
-								</p>
-							</div>
-						</div>
-					</div>
+				    </div>
 				</div>
+		    </div>
+		<div class="container mb-5">
+			<div class="p-5 text-center bg-dark rounded-3">
+				<h1 class="text-light mt-5">See more</h1>
+				<p class="col-lg-8 mx-auto fs-5 text-light">
+				Reviews, indepth info, and portfolios of our work.
+			  	<div class="d-flex flex-wrap justify-content-center m-auto gap-2 w-50">
+					<a href="powder coat.html" class="btn btn-primary btn-lg px-4">
+						Powder coating
+					</a>
+					<a href="cerakote.html" class="btn btn-primary btn-lg px-4">
+						Cerakote
+					</a>
+					<a href="https://www.google.com/search?kgmid=/g/11g6rhsv2g&hl=en-US&q=JAR+Custom+Coatings&kgs=a6a94086a2e23908&shndl=17&shem=losc&source=sh/x/kp/osrp/m5/1#lrd=0x5495af77d652da05:0x563c5dd1648b9eed,1,,,," class="btn btn-primary btn-lg px-4" target="_blank">
+						Google Reviews
+					</a>
+					<a href="https://www.facebook.com/JarCustomsLLC/reviews" class="btn btn-primary btn-lg px-4" target="_blank">
+						Facebook Reviews
+					</a>
+			  	</div>
 			</div>
-			<!-- <div class="container">
-                        <div class="row">
-                              <article class="col-4">
-                                    <h3 class="badge">Lorem Ipsum</h3>
-                                    <img src="Assets/Powder coat.png" class="img-fluid" alt="">
-                              </article>
-                              <article class="col-4">
-                                    <h3 class="badge">Lorem Ipsum</h3>
-                                    <img src="Assets/Powder coat.png" class="img-fluid" alt="">
-                              </article>
-                              <article class="col-4">
-                                    <h3 class="badge">Lorem Ipsum</h3>
-                                    <img src="Assets/Powder coat.png" class = "img-fluid" alt="">
-                              </article>
-                        </div>
-                  </div>
-		</section>-->
-		<section id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<img class="img-fluid" src="Assets/Powder coat.png" alt="">
-					</div>
-					<div class="col-6">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-						 Ipsa voluptatem voluptas sit, ad quam tempore non sequi voluptatum similique
-						 doloremque rem odit fugiat impedit deleniti officiis neque culpa earum aperiam?
-						</p>
-					</div>
-				</div>
-			</div> 
-		</section>
+		</div>
 	</main>
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-md-6 col-sm-10">
 					<h3>Info</h3>
 					<ul>
-						<li><span class="badge">Email:</span> Lorem Ipsum</li>
-						<li><span class="badge">Phone:</span> Lorem Ipsum</li>
+						<li><span class="badge">Hours:</span> Mon - Fri, 9:00 a.m - 5:00 p.m</li>
+						<li><span class="badge">Email:</span> <a href="mailto:office@jarcustoms.com">office@jarcustoms.com</a></li>
+						<li><span class="badge">Phone:</span> (360) 718-8772</li>
 						<li><span class="badge">Address:</span> 1119 NE 95th St. Suite A Vancouver, WA, US 98665</li>
 					</ul>
+					<h3>Socials</h3>
+					<ul class="socials list-unstyled hstack">
+						<li><a href="https://www.facebook.com/JarCustomsLLC" target="-blank"><img src="Assets/facebook icon.png" style="width:56px; filter: invert(100%);" alt=""></a></li>
+						<li><a href="https://www.instagram.com/jarcustomcoatings/" target="-blank"><img src="Assets/instagram icon.png" style="width:56px; filter: invert(100%);" alt=""></a></li>
+					</ul>
 				</div>
-				<div class="col">
+				<div class="col-md-6 d-none d-md-block">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d348.38194164896555!2d-122.65968755012835!3d45.689857540052415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495af77d652da05%3A0x563c5dd1648b9eed!2sJAR%20Customs%20Performance%20Finishes!5e0!3m2!1sen!2sus!4v1705115506134!5m2!1sen!2sus" 
-					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
 		</div>

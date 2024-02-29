@@ -14,12 +14,12 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-2">
-					<a href="index.html"><img class="img-fluid" src="./Assets/Logo.png" alt="JAR customs logo"></a>
+				<div class="col-3 col-lg-2">
+					<a href="index.html"><img src="Assets/Logo.png" class="img-fluid" alt=""></a>
 				</div>
-				<div class="col-1 dropdown">
+				<div class="col-1 dropdown desktopElement">
 					<button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
-						Menu <span class="material-symbols-outlined">menu</span>
+						<span class="material-symbols-outlined">menu</span>
 					</button>
 					<ul class="dropdown-menu">
 						<li class="dropdown-item"><a href="index.html">Home</a></li>
@@ -29,61 +29,187 @@
 				</div>
 			</div>
 		</div>
+		<nav class="mobileNav d-sm-none d-flex">
+			<a href="contact.html">Contact</a>
+			<div class="col-1 dropdown">
+				<button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
+					Menu <span class="material-symbols-outlined">menu</span>
+				</button>
+				<ul class="dropdown-menu">
+					<li class="dropdown-item"><a href="index.html">Home</a></li>
+					<li class="dropdown-item"><a href="Information center.html">Information center</a></li>
+				</ul>
+			</div>
+		</nav>
 	</header>
 	<main>
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="accordion accordion-flush">
-						<div class="accordion-item">
-						<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-							Accordion Item #1
-						</button>
-						</h2>
-						<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-						</div>
-						</div>
-						<div class="accordion-item">
-						<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-							Accordion Item #2
-						</button>
-						</h2>
-						<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-						</div>
-						</div>
-						<div class="accordion-item">
-						<h2 class="accordion-header">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-							Accordion Item #3
-						</button>
-						</h2>
-						<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-						<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-						</div>
+		<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
+                  <div class="col-md-6 p-lg-5 mx-auto my-5">
+                        <h1 class="display-3 fw-light">Information Center<br></h1><h3 class="display-6">Articles, FAQs, helpful links</h3>
+                        <!-- <div class="d-flex gap-3 justify-content-center lead fw-normal">
+                              <a class="icon-link" href="#">Gallery</a>
+                              <a class="icon-link" href="#">Ask questions</a>
+                        </div> -->
+                  </div>
+            </div>
+		<section id="FAQ">
+			<div class="container my-5">
+				<h3>Powder Coating</h3>
+				<div class="row">
+					<div class="col-12">
+						<div class="accordion accordion-flush">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+										Accordion Item #1
+									</button>
+								</h2>
+								<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga cupiditate nam, deleniti,
+									reprehenderit quisquam quasi nihil repudiandae doloremque veniam libero vitae, similique assumenda eum? Suscipit iste quaerat repellendus omnis.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+										Accordion Item #2
+									</button>
+								</h2>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima odit maxime debitis laboriosam culpa nulla, voluptatibus,
+									amet quaerat fugit beatae voluptate quia. Quae maiores ratione harum veritatis, dicta voluptatem voluptatibus.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+										Accordion Item #3
+									</button>
+								</h2>
+								<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus qui facilis culpa totam aut, mollitia iure asperiores labore
+									soluta doloremque esse dicta temporibus sunt cupiditate at reprehenderit neque laudantium facere!
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="container my-5">
+				<h3>Cerakote</h3>
+				<div class="row">
+					<div class="col-12">
+						<div class="accordion accordion-flush">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+										Accordion Item #1
+									</button>
+								</h2>
+								<div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga cupiditate nam, deleniti,
+									reprehenderit quisquam quasi nihil repudiandae doloremque veniam libero vitae, similique assumenda eum? Suscipit iste quaerat repellendus omnis.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+										Accordion Item #2
+									</button>
+								</h2>
+								<div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima odit maxime debitis laboriosam culpa nulla, voluptatibus,
+									amet quaerat fugit beatae voluptate quia. Quae maiores ratione harum veritatis, dicta voluptatem voluptatibus.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+										Accordion Item #3
+									</button>
+								</h2>
+								<div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus qui facilis culpa totam aut, mollitia iure asperiores labore
+									soluta doloremque esse dicta temporibus sunt cupiditate at reprehenderit neque laudantium facere!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container my-5">
+				<h3>Billing</h3>
+				<div class="row">
+					<div class="col-12">
+						<div class="accordion accordion-flush">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseOne">
+										Accordion Item #1
+									</button>
+								</h2>
+								<div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fuga cupiditate nam, deleniti,
+									reprehenderit quisquam quasi nihil repudiandae doloremque veniam libero vitae, similique assumenda eum? Suscipit iste quaerat repellendus omnis.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseTwo">
+										Accordion Item #2
+									</button>
+								</h2>
+								<div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima odit maxime debitis laboriosam culpa nulla, voluptatibus,
+									amet quaerat fugit beatae voluptate quia. Quae maiores ratione harum veritatis, dicta voluptatem voluptatibus.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseThree">
+										Accordion Item #3
+									</button>
+								</h2>
+								<div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus qui facilis culpa totam aut, mollitia iure asperiores labore
+									soluta doloremque esse dicta temporibus sunt cupiditate at reprehenderit neque laudantium facere!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
       </main>
-	<footer class="fixedFooter">
+	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-md-6 col-sm-10">
 					<h3>Info</h3>
 					<ul>
-						<li><span class="badge">Email:</span> Lorem Ipsum</li>
-						<li><span class="badge">Phone:</span> Lorem Ipsum</li>
+						<li><span class="badge">Hours:</span> Mon - Fri, 9:00 a.m - 5:00 p.m</li>
+						<li><span class="badge">Email:</span> <a href="mailto:office@jarcustoms.com">office@jarcustoms.com</a></li>
+						<li><span class="badge">Phone:</span> (360) 718-8772</li>
 						<li><span class="badge">Address:</span> 1119 NE 95th St. Suite A Vancouver, WA, US 98665</li>
 					</ul>
+					<h3>Socials</h3>
+					<ul class="socials list-unstyled hstack">
+						<li><a href="https://www.facebook.com/JarCustomsLLC" target="-blank"><img src="Assets/facebook icon.png" style="width:56px; filter: invert(100%);" alt=""></a></li>
+						<li><a href="https://www.instagram.com/jarcustomcoatings/" target="-blank"><img src="Assets/instagram icon.png" style="width:56px; filter: invert(100%);" alt=""></a></li>
+					</ul>
 				</div>
-				<div class="col">
+				<div class="col-md-6 d-none d-md-block">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d348.38194164896555!2d-122.65968755012835!3d45.689857540052415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495af77d652da05%3A0x563c5dd1648b9eed!2sJAR%20Customs%20Performance%20Finishes!5e0!3m2!1sen!2sus!4v1705115506134!5m2!1sen!2sus" 
-					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
 		</div>
