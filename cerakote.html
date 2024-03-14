@@ -2,7 +2,7 @@
 <head>
       <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Orpheus</title>
+	<title>JAR Custom // Cerakote</title>
 	<meta name="description" content="SW Washington's Premier Powder Coating & Cerakote Experts">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -14,43 +14,47 @@
 </head>
 <body>
       <header>
-		<div class="container">
-			<div class="row">
-				<div class="col-3 col-lg-2">
-					<a href="index.html"><img src="Assets/Logo.png" class="img-fluid" alt=""></a>
-				</div>
-				<div class="col-1 dropdown desktopElement">
-					<button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
-						<span class="material-symbols-outlined">menu</span>
-					</button>
-					<ul class="dropdown-menu">
-						<li class="dropdown-item"><a href="index.html">Home</a></li>
-						<li class="dropdown-item"><a href="contact.html">Contact</a></li>
-						<li class="dropdown-item"><a href="Information center.html">Information center</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<nav class="mobileNav d-sm-none d-flex">
-			<a href="contact.html">Contact</a>
-			<div class="col-1 dropdown">
-				<button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
-					Menu <span class="material-symbols-outlined">menu</span>
-				</button>
-				<ul class="dropdown-menu">
-					<li class="dropdown-item"><a href="index.html">Home</a></li>
-					<li class="dropdown-item"><a href="Information center.html">Information center</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+            <div class="container">
+                  <div class="row">
+                        <nav class="d-flex justify-content-between align-items-center">
+                              <div class="col-3 col-lg-2">
+                                    <a href="index.html"><img src="Assets/Logo.png" class="img-fluid" alt=""></a>
+                              </div>				  
+                              <div class="nav nav-pills desktopElement d-flex align-items-center">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                    <span class="nav-item dropdown" style="cursor: pointer;">
+                                          <a class="nav-link active" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Portfolio
+                                          </a>
+                                          <div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+                                                <a href="powder coat.html#powderCoatingAlbums" class="dropdown-item rounded-2">Powder Coating</a>
+                                                <a href="cerakote.html#cerakotingAlbums" class="dropdown-item rounded-2">Cerakote</a>
+                                          </div>
+                                    </span>
+                                    <a href="Information center.html" class="nav-link">Learn</a>
+                                    <a href="Contact.html" class="nav-link">Contact</a>
+                              </div>
+                        </nav>
+                        <nav class="mobileNav d-md-none d-flex dropdown dropdown-center">
+                              <button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="material-symbols-outlined">menu</span>
+                              </button>
+                              <div class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px" data-bs-theme="dark">
+                                    <a href="index.html" class="dropdown-item rounded-2 text-primary">Home</a>
+                                    <a href="Contact.html" class="dropdown-item rounded-2">Contact</a>
+                                    <a href="Portfolio.html" class="dropdown-item rounded-2">Portfolio</a>
+                                    <a href="Information center.html" class="dropdown-item rounded-2">Information center</a>
+                              </div>
+                        </nav>
+                  </div>
+            </div>
+      </header>
       <main>
             <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
                   <div class="col-md-6 p-lg-5 mx-auto my-5">
                         <h1 class="display-3 fw-light">Cerakote: The ultimate protection for your most valuable possessions.</h1>
                         <div class="d-flex gap-3 justify-content-center lead fw-normal">
                               <a class="icon-link" href="#">Gallery</a>
-                              <a class="icon-link" href="#">Ask questions</a>
                         </div>
                   </div>
             </div>
@@ -84,15 +88,80 @@
                         </div>
                   </div>
             </section>
-            
+            <div id="cerakotingAlbums" class="album py-5 bg-body-tertiary">
+                  <div class="py-5 text-center container">
+                        <div class="row py-lg-5">
+                              <div class="col-lg-6 col-md-8 mx-auto">
+                                    <h1 class="text-dark">Cerakoting // Albums</h1>
+                                    <p class="lead text-body-secondary"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus optio aliquid commodi explicabo in quas consectetur praesentium, iure, saepe nobis necessitatibus unde, asperiores pariatur. Ad nulla labore dolorum nemo ratione.
+                                    </p>
+                                    <p>
+                                          <button class="btn btn-primary my-2 supportTicket-button">Ask Questions</button>
+                                    </p>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                              <div class="col">
+                                    <div class="card shadow-sm">
+                                          <img src="Assets/Cerakote/Screenshot 2024-01-29 at 12.23.21 PM.png" class="card-img-top" alt="" loading="">
+                                          <div class="card-body">
+                                                <strong>Wheels</strong>
+                                                <p class="card-text">Once-ordinary wheels are reborn with impeccable finishes, unrivaled durability, and a spectrum of colors and textures</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                      <a href="Albums/Wheels.html" class="btn btn-sm btn-outline-secondary stretched-link">View</a>
+                                                      <small class="text-body-secondary">6 photos</small>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            </div>
+            <div class="">
+                  <div class="p-5 text-center bg-dark">
+                        <div class="container py-5">
+                              <h1 class="display-6">Want your automotive parts cerakoted?</h1>
+                              <p class="col-lg-8 mx-auto lead">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam aliquid esse similique quia minus, quos placeat numquam laudantium recusandae ut, exercitationem nesciunt quae eveniet, tempore voluptatum. Obcaecati nemo recusandae ex!
+                              </p>
+                              <a href="Contact.html" class="btn btn-outline-primary btn-lg">Get started</a>
+                        </div>
+                  </div>
+            </div>
       </main>
       <footer>
+            <div class="container supportTicket shadow-lg rounded-4 px-5 py-3">
+                  <div class="row hstack">
+                        <div class="col-3"><img src="Assets/Logo.png" class="img-fluid my-4 p-2" alt="JAR Logo"></div>
+                        <div class="col-8"><h3 class="display-6">Connect with us</h3></div>
+                  </div>
+                  <div class="row h-50">
+                        <form action="https://formspree.io/f/mqkrlglz" method="post" onsubmit="return antiSpam();" name = "userQuestion" class = "col-12 d-flex flex-column">
+                              <input type="text" name="userName" id="userName" class="userName p-2 m-2 rounded" placeholder="Name" required>
+                              <input type="email" name="userEmail" id="userEmail" class="userEmail p-2 m-2 rounded" placeholder="Email" required>
+                              <textarea name="userMessage" id="userMessage" class="userMessage p-2 m-2 rounded" style="height:12vh" placeholder="Message" required></textarea>
+                              <div class="d-flex flex-row">
+                                    <input type="checkbox" name="botTrap" id="botTrap" style="display: none;">
+                                    <button type="submit" class="btn btn-outline-primary p-2 m-2 rounded w-25">Send</button>
+                                    <span class="btn btn-outline-danger p-2 m-2 rounded w-25 formClose-button">Cancel</span>
+                              </div>
+                        </form>
+                  </div>
+                  <div class="row">
+                        <div class="col-12 d-flex flex-column my-5 p-3 text-center rounded"  style="background-color: 424242;">
+                              <p> If you have questions please send your inquiry. <br> We will get back to you as soon as we can!</p>
+                        </div>
+                  </div>
+            </div>
             <div class="container">
                   <div class="row">
                         <div class="col-md-6 col-sm-10">
                               <h3>Info</h3>
                               <ul>
-                                    <li><span class="badge">Hours:</span> Mon - Fri, 9:00 a.m - 5:00 p.m</li>
+                                    <li><span class="badge">Hours:</span> Mon - Fri, 8:00 a.m - 4:00 p.m</li>
                                     <li><span class="badge">Email:</span> <a href="mailto:office@jarcustoms.com">office@jarcustoms.com</a></li>
                                     <li><span class="badge">Phone:</span> (360) 718-8772</li>
                                     <li><span class="badge">Address:</span> 1119 NE 95th St. Suite A Vancouver, WA, US 98665</li>
@@ -113,6 +182,6 @@
             </div>
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="Scripts.js"></script>
 </body>
-
 </html>

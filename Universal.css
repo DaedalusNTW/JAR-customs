@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6{
       background-color: #00b18c;
       font-size: 1em;
       margin: 0px 0px 10px 0px;}
+
 a:link{
       text-decoration: none;
 }
@@ -27,19 +28,23 @@ a:link{
       z-index: 10; 
       padding: 1vmax;
 }   
-@media screen and (max-width:576px){
+@media screen and (max-width:768px){
       .desktopElement{
             display: none;
       }
       .mobileNav{
-            
             justify-content: space-around;
             align-items: center;
       }
 }
 
 
+
+header nav ul .dropdown a {
+      font-size: 1.25rem;
+}
 header{
+      font-size: 1.25rem;
       background-color: #212121;
       padding: 2vw 0vw 2vw 0vw;}
 header .row{
@@ -59,6 +64,48 @@ header .row{
 .mainNav img{
       width: 48px;
 }
+
+
+.supportTicket{
+      display: none;
+      position: fixed;
+      bottom: 3vh;
+      right: 3vh;
+      z-index: 100;
+      width: 575px;
+      background-color: #212121;}
+.supportTicket input{
+      background-color: #424242;
+      color:#ffffff;
+      box-shadow: none;
+      outline: none;
+      border: none;}
+.supportTicket input::placeholder{
+      color: #ffffff;}
+.supportTicket textArea{
+      background-color: #424242;
+      color:#ffffff;
+      box-shadow: none;
+      outline: none;
+      border: none;}
+.supportTicket textArea::placeholder{
+      color: #ffffff;}
+.visible{
+      display: block;
+}
+.hide{
+      display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 #hero h1{
       color: #00b18c;
@@ -131,9 +178,7 @@ button.accordion-button{
       border-radius: 16px;
     
 }
-.productContainer img{
-      
-}
+
 .salesCard{
 
       border: 3px solid #00b18c;

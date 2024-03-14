@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Orpheus</title>
+	<title>Jar Customs</title>
 	<meta name="description" content="SW Washington's Premier Powder Coating & Cerakote Experts">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -12,38 +12,45 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link href="Universal.css" rel="stylesheet">
 </head>
-<body>
 	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-3 col-lg-2">
-					<a href="index.html"><img src="Assets/Logo.png" class="img-fluid" alt=""></a>
-				</div>
-				<div class="col-1 dropdown desktopElement">
-					<button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
-						<span class="material-symbols-outlined">menu</span>
-					</button>
-					<ul class="dropdown-menu">
-						<li class="dropdown-item"><a href="index.html">Home</a></li>
-						<li class="dropdown-item"><a href="contact.html">Contact</a></li>
-						<li class="dropdown-item"><a href="Information center.html">Information center</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<nav class="mobileNav d-sm-none d-flex">
-			<a href="contact.html">Contact</a>
-			<div class="col-1 dropdown">
-				<button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
-					Menu <span class="material-symbols-outlined">menu</span>
-				</button>
-				<ul class="dropdown-menu">
-					<li class="dropdown-item"><a href="index.html">Home</a></li>
-					<li class="dropdown-item"><a href="Information center.html">Information center</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+            <div class="container">
+                  <div class="row">
+                        <nav class="d-flex justify-content-between align-items-center">
+                              <div class="col-3 col-lg-2">
+                                    <a href="index.html"><img src="Assets/Logo.png" class="img-fluid" alt=""></a>
+                              </div>				  
+                              <div class="nav nav-pills desktopElement d-flex align-items-center">
+                                    <a href="index.html" class="nav-link active">Home</a>
+                                    <span class="nav-item dropdown" style="cursor: pointer;">
+                                          <a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Portfolio
+                                          </a>
+                                          <div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+                                                <a href="powder coat.html#powderCoatingAlbums" class="dropdown-item rounded-2">Powder Coating</a>
+                                                <a href="cerakote.html#cerakotingAlbums" class="dropdown-item rounded-2">Cerakote</a>
+                                          </div>
+                                    </span>
+                                    <a href="Information center.html" class="nav-link">Learn</a>
+                                    <a href="Contact.html" class="nav-link">Contact</a>
+                              </div>
+                        </nav>
+                        <nav class="mobileNav d-md-none d-flex dropdown dropdown-center">
+                              <button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="material-symbols-outlined">menu</span>
+                              </button>
+                              <div class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px" data-bs-theme="dark">
+                                    <a href="index.html" class="dropdown-item rounded-2 text-primary">Home</a>
+                                    <a href="Contact.html" class="dropdown-item rounded-2">Contact</a>
+                                    <a href="Portfolio.html" class="dropdown-item rounded-2">Portfolio</a>
+                                    <a href="Information center.html" class="dropdown-item rounded-2">Information center</a>
+                              </div>
+                        </nav>
+                  </div>
+            </div>
+      </header>
+	<div class="alert alert-warning" style="width: 50%; margin: 3vh auto 3vh auto;">
+		<h3 class="text-dark text-center display-5">This site is under construction</h3>
+	</div>
 	<main>
 		<section id="hero">
 			<div class="container col-xxl-8 px-4 py-5">
@@ -57,8 +64,8 @@
 					Transform the look, feel, and performance of your metal parts with powder coating or cerakoting. At JAR customs, 
 					we're passionate about empowering your vision with uncompromising durability, flawless finishes, and unparalleled service.</p>
 				    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-					<a href = "Contact.html" class="btn btn-primary btn-lg px-4 me-md-2">Get Started</a>
-					<a href = "Information center.html" class="btn btn-outline-secondary btn-lg px-4">FAQ</a>
+					<a href = "Contact.html" class="btn btn-outline-primary btn-lg px-4 me-md-2">Get Started</a>
+					<a href = "Information center.html#FAQ" class="btn btn-outline-secondary btn-lg px-4">FAQ</a>
 				    </div>
 				  </div>
 				</div>
@@ -130,7 +137,7 @@
 				<div class="col-md-6 col-sm-10">
 					<h3>Info</h3>
 					<ul>
-						<li><span class="badge">Hours:</span> Mon - Fri, 9:00 a.m - 5:00 p.m</li>
+						<li><span class="badge">Hours:</span> Mon - Fri, 8:00 a.m - 4:00 p.m</li>
 						<li><span class="badge">Email:</span> <a href="mailto:office@jarcustoms.com">office@jarcustoms.com</a></li>
 						<li><span class="badge">Phone:</span> (360) 718-8772</li>
 						<li><span class="badge">Address:</span> 1119 NE 95th St. Suite A Vancouver, WA, US 98665</li>
