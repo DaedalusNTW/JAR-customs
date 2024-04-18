@@ -2,9 +2,11 @@
 <head>
       <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JAR Customs // Valve Covers</title>
+	<title>JAR Customs - Powder Coated Valve Covers</title>
 	<meta name="description" content="SW Washington's Premier Powder Coating & Cerakote Experts">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,50 +16,70 @@
 </head>
 <body>
       <header>
-            <div class="container">
-                  <div class="row">
-                        <nav class="d-flex justify-content-between align-items-center">
-                              <div class="col-3 col-lg-2">
-                                    <a href="../index.html"><img src="../Assets/Logo.png" class="img-fluid" alt=""></a>
-                              </div>				  
-                              <div class="nav nav-pills desktopElement d-flex align-items-center">
-                                    <a href="../index.html" class="nav-link">Home</a>
-                                    <span class="nav-item dropdown" style="cursor: pointer;">
-                                          <a class="nav-link active" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Portfolio
-                                          </a>
-                                          <div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
-                                                <a href="../powder coat.html#powderCoatingAlbums" class="dropdown-item rounded-2">Powder Coating</a>
-                                                <a href="../cerakote.html#cerakotingAlbums" class="dropdown-item rounded-2">Cerakote</a>
-                                          </div>
-                                    </span>
-                                    <a href="../Information center.html" class="nav-link">Learn</a>
-                                    <a href="../Contact.html" class="nav-link">Contact</a>
-                              </div>
-                        </nav>
-                        <nav class="mobileNav d-md-none d-flex dropdown dropdown-center">
-                              <button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="material-symbols-outlined">menu</span>
-                              </button>
-                              <div class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px" data-bs-theme="dark">
-                                    <a href="../index.html" class="dropdown-item rounded-2 text-primary">Home</a>
-                                    <a href="../Contact.html" class="dropdown-item rounded-2">Contact</a>
-                                    <a href="../Portfolio.html" class="dropdown-item rounded-2">Portfolio</a>
-                                    <a href="../Information center.html" class="dropdown-item rounded-2">Information center</a>
-                              </div>
-                        </nav>
-                  </div>
-            </div>
-      </header>
+		<div class="desktopNav d-md-block d-none">
+			<div class="container">
+				<nav class="d-md-flex align-items-center">
+					<div class="col-2">
+						<a href="../index.html"><img src="../Assets/Wordmark.png" class="img-fluid pe-3" alt=""></a>
+					</div>				  
+					<div class="nav col-10 gap-3 ms-3">
+						<a href="../index.html" class="nav-link current">Home</a>
+						<span class="nav-item dropdown" style="cursor: pointer;">
+							<a class="nav-link current" data-bs-toggle="dropdown" aria-expanded="false">
+								Portfolio
+							</a>
+							<div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+								<a href="../powder coat.html#powderCoatingAlbums" class="dropdown-item rounded-2">Powder Coating</a>
+								<a href="../cerakote.html#cerakotingAlbums" class="dropdown-item rounded-2">Cerakote</a>
+							</div>
+						</span>
+						<a href="../Information center.html" class="nav-link">FAQs</a>
+						<span class="nav-item dropdown" style="cursor: pointer;">
+							<a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+								Contact
+							</a>
+							<div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+								<a href="../Contact.html" class="dropdown-item rounded-2">Get started</a>
+								<a class="dropdown-item rounded-2 supportButton supportTicket-button"><span>Support</span></a>
+							</div>
+						</span>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<nav class="nav mobileNav d-md-none d-flex">
+			<a href="../index.html" class="nav-item col-3"><img src="../Assets/Nav icons/Home.png" alt="" class="" style="filter: invert(100%);"><span>Home</span></a>
+			<span class="nav-item dropdown-center col-3">
+				<a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"><img src="../Assets/Nav icons/Portfolio.png" alt="" class="" style="filter: invert(100%);">Portfolio</a>
+				<div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+					<a href="../powder coat.html#powderCoatingAlbums" class="dropdown-item rounded-2 py-2">Powder Coating</a>
+					<a href="../cerakote.html#cerakotingAlbums" class="dropdown-item rounded-2 py-2">Cerakote</a>
+				</div>
+			</span>
+			<span class="nav-item dropdown-center col-3">
+				<a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"><img src="../Assets/Nav icons/Contact icon.png" alt="" class="" style="filter: invert(100%);">Contact</a>
+				<div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+					<a href="tel:(360) 718-8772" class="dropdown-item rounded-2 py-2">Call</a>
+					<a href="mailto:office@jarcustoms.com" class="dropdown-item rounded-2 py-2">Email</a>
+				</div>
+			</span>
+			<a href="../Information center.html" class="nav-item col-3"><img src="../Assets/Nav icons/FAQ.png" alt="" class="" style="filter: invert(100%);">FAQs</a>
+		</nav>
+	</header>
       <main>
+            <div class="container">
+                  <div class="row justify-content-center d-md-none">
+				<a href="../index.html" class="col-6 mt-4"><img src="../Assets/Wordmark.png" class="img-fluid" alt=""></a>
+			</div>
+            </div>
             <section id="pageHeader">
-                  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
+                  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 my-4 text-center bg-dark">
                         <div class="col-md-6 p-lg-5 mx-auto my-5">
                               <h1 class="display-3 fw-light">Powder Coated Valve Covers</h1>
                         </div>
                   </div>
             </section>
-            <nav id="galleryNav">
+            <nav id="galleryNav" class="d-md-block d-none">
                   <div class="container">
                         <div class="row my-4">
                               <div class="col">
@@ -82,76 +104,84 @@
                         </div>
                   </div>
             </nav>
-            <section id="wheelsAlbum">
+            <section id="valveCoversAlbum">
                   <div class="container">
-                        <div class="row" data-masonry='{"percentPosition": true }'>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (1).jpeg" class="img-fluid" alt="">
-                                    </div>
+                        <div class="galleryGrid">
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (1).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (2).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (2).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (3).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (3).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (4).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (4).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (5).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (5).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (6).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (6).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (7).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (7).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (8).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (8).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (9).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (9).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (10).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (10).jpeg" alt="" loading="lazy">
                               </div>
-                              <div class="col-sm-6 col-lg-4 mb-4">
-                                    <div class="card">
-                                          <img src="../Assets/Powder coating/Valve Covers/Valve covers (11).jpeg" class="img-fluid" alt="">
-                                    </div>
+                              <div class="gridItem card">
+                                    <img src="../Assets/Powder coating/Valve Covers/Valve covers (11).jpeg" alt="" loading="lazy">
                               </div>
-
+                        </div>
+                        <div class="btn-group mb-5">
+                              <div class="btn btn-lg btn-outline-primary">
+                                    <a href="../powder coat.html#powderCoatingAlbums">Back</a>
+                              </div>
+                              <div class="btn btn-lg btn-outline-primary">
+                                    <a href="#valveCoversAlbum" class="stretched-link">Top</a>
+                              </div>
                         </div>
                   </div>
             </section>
       </main>
       <footer>
+            <div class="container supportTicket rounded-4 shadow-lg px-5 py-3">
+                  <div class="row hstack">
+                        <div class="col-3"><img src="Assets/Wordmark.png" class="img-fluid my-4 p-2" alt="JAR Logo"></div>
+                        <div class="col-8"><h3 class="display-6">Connect with us</h3></div>
+                  </div>
+                  <div class="row">
+                        <form action="https://formspree.io/f/mqkrlglz" method="post" onsubmit="return antiSpam();" name = "userQuestion" class = "col-12 d-flex flex-column">
+                              <input type="text" name="userName" id="userName" class="userName p-2 m-2 rounded" placeholder="Name" required>
+                              <input type="email" name="userEmail" id="userEmail" class="userEmail p-2 m-2 rounded" placeholder="Email" required>
+                              <textarea name="userMessage" id="userMessage" class="userMessage p-2 m-2 rounded" style="height:12vh" placeholder="Message" required></textarea>
+                              <div class="d-flex flex-row">
+                                    <input type="checkbox" name="botTrap" id="botTrap" style="display: none;">
+                                    <button type="submit" class="btn btn-outline-primary p-2 m-2 rounded w-25">Send</button>
+                                    <span class="btn btn-outline-danger p-2 m-2 rounded w-25 formClose-button">Cancel</span>
+                              </div>
+                        </form>
+                  </div>
+                  <div class="row my-5">
+                        <div class="col-12 d-flex flex-column p-3 text-center rounded"  style="background-color: 424242;">
+                              <p> If you have questions please send your inquiry. <br> We will get back to you as soon as we can!</p>
+                        </div>
+                  </div>
+            </div>
             <div class="container">
                   <div class="row">
                         <div class="col-md-6 col-sm-10">
                               <h3>Info</h3>
                               <ul>
-                                    <li><span class="badge">Hours:</span> Mon - Fri, 8:00 a.m - 4:00 p.m</li>
+                                    <li><span class="badge">Hours:</span> Mon - Fri, 8:00 a.m - 5:00 p.m</li>
                                     <li><span class="badge">Email:</span> <a href="mailto:office@jarcustoms.com">office@jarcustoms.com</a></li>
                                     <li><span class="badge">Phone:</span> (360) 718-8772</li>
                                     <li><span class="badge">Address:</span> 1119 NE 95th St. Suite A Vancouver, WA, US 98665</li>
@@ -171,7 +201,6 @@
                   </div>
             </div>
       </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+      <script src="../Scripts.js"></script>
 </body>
 </html>
