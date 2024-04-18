@@ -2,7 +2,7 @@
 <head>
       <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JAR Custom // Cerakote</title>
+	<title>JAR Custom - Cerakote</title>
 	<meta name="description" content="SW Washington's Premier Powder Coating & Cerakote Experts">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -14,43 +14,63 @@
 </head>
 <body>
       <header>
-            <div class="container">
-                  <div class="row">
-                        <nav class="d-flex justify-content-between align-items-center">
-                              <div class="col-3 col-lg-2">
-                                    <a href="index.html"><img src="Assets/Logo.png" class="img-fluid" alt=""></a>
-                              </div>				  
-                              <div class="nav nav-pills desktopElement d-flex align-items-center">
-                                    <a href="index.html" class="nav-link">Home</a>
-                                    <span class="nav-item dropdown" style="cursor: pointer;">
-                                          <a class="nav-link active" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Portfolio
-                                          </a>
-                                          <div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
-                                                <a href="powder coat.html#powderCoatingAlbums" class="dropdown-item rounded-2">Powder Coating</a>
-                                                <a href="cerakote.html#cerakotingAlbums" class="dropdown-item rounded-2">Cerakote</a>
-                                          </div>
-                                    </span>
-                                    <a href="Information center.html" class="nav-link">Learn</a>
-                                    <a href="Contact.html" class="nav-link">Contact</a>
-                              </div>
-                        </nav>
-                        <nav class="mobileNav d-md-none d-flex dropdown dropdown-center">
-                              <button class="btn btn-secondary navButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="material-symbols-outlined">menu</span>
-                              </button>
-                              <div class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px" data-bs-theme="dark">
-                                    <a href="index.html" class="dropdown-item rounded-2 text-primary">Home</a>
-                                    <a href="Contact.html" class="dropdown-item rounded-2">Contact</a>
-                                    <a href="Portfolio.html" class="dropdown-item rounded-2">Portfolio</a>
-                                    <a href="Information center.html" class="dropdown-item rounded-2">Information center</a>
-                              </div>
-                        </nav>
-                  </div>
-            </div>
-      </header>
+		<div class="desktopNav d-md-block d-none">
+			<div class="container">
+				<nav class="d-md-flex align-items-center">
+					<div class="col-2">
+						<a href="index.html" class=""><img src="Assets/Wordmark.png" class="img-fluid pe-3" alt=""></a>
+					</div>				  
+					<div class="nav col-10 gap-3 ms-3">
+						<a href="index.html" class="nav-link">Home</a>
+						<span class="nav-item dropdown" style="cursor: pointer;">
+							<a class="nav-link current" data-bs-toggle="dropdown" aria-expanded="false">
+								Portfolio
+							</a>
+							<div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+								<a href="powder coat.html#powderCoatingAlbums" class="dropdown-item rounded-2">Powder Coating</a>
+								<a href="cerakote.html#cerakotingAlbums" class="dropdown-item rounded-2">Cerakote</a>
+							</div>
+						</span>
+						<a href="Information center.html" class="nav-link">FAQs</a>
+						<span class="nav-item dropdown" style="cursor: pointer;">
+							<a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+								Contact
+							</a>
+							<div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+								<a href="Contact.html" class="dropdown-item rounded-2">Get started</a>
+								<a class="dropdown-item rounded-2 supportButton supportTicket-button"><span>Support</span></a>
+							</div>
+						</span>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<nav class="nav mobileNav d-md-none d-flex">
+			<a href="index.html" class="nav-item col-3"><img src="Assets/Nav icons/Home.png" alt="" class="" style="filter: invert(100%);"><span>Home</span></a>
+			<span class="nav-item dropdown-center col-3">
+				<a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"><img src="Assets/Nav icons/Portfolio.png" alt="" class="" style="filter: invert(100%);">Portfolio</a>
+				<div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+					<a href="powder coat.html#powderCoatingAlbums" class="dropdown-item rounded-2 py-2">Powder Coating</a>
+					<a href="cerakote.html#cerakotingAlbums" class="dropdown-item rounded-2 py-2">Cerakote</a>
+				</div>
+			</span>
+			<span class="nav-item dropdown-center col-3">
+				<a class="nav-link" data-bs-toggle="dropdown" aria-expanded="false"><img src="Assets/Nav icons/Contact icon.png" alt="" class="" style="filter: invert(100%);">Contact</a>
+				<div class="dropdown-menu gap-1 p-2 rounded-3 my-1 border-0 shadow w-220px" data-bs-theme="dark">
+					<a href="tel:(360) 718-8772" class="dropdown-item rounded-2 py-2">Call</a>
+					<a href="mailto:office@jarcustoms.com" class="dropdown-item rounded-2 py-2">Email</a>
+				</div>
+			</span>
+			<a href="Information center.html" class="nav-item col-3"><img src="Assets/Nav icons/FAQ.png" alt="" class="" style="filter: invert(100%);">FAQs</a>
+		</nav>
+	</header>
       <main>
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
+            <div class="container">
+                  <div class="row justify-content-center d-md-none">
+				<a href="index.html" class="col-6 mt-4"><img src="Assets/Wordmark.png" class="img-fluid" alt=""></a>
+			</div>
+            </div>
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 my-4 text-center bg-dark">
                   <div class="col-md-6 p-lg-5 mx-auto my-5">
                         <h1 class="display-3 fw-light">Cerakote: The ultimate protection for your most valuable possessions.</h1>
                         <div class="d-flex gap-3 justify-content-center lead fw-normal">
@@ -93,11 +113,11 @@
                         <div class="row py-lg-5">
                               <div class="col-lg-6 col-md-8 mx-auto">
                                     <h1 class="text-dark">Cerakoting // Albums</h1>
-                                    <p class="lead text-body-secondary"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus optio aliquid commodi explicabo in quas consectetur praesentium, iure, saepe nobis necessitatibus unde, asperiores pariatur. Ad nulla labore dolorum nemo ratione.
+                                    <!-- <p class="lead text-body-secondary"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus optio aliquid commodi explicabo in quas consectetur praesentium, iure, saepe nobis necessitatibus unde, asperiores pariatur. Ad nulla labore dolorum nemo ratione.
                                     </p>
                                     <p>
                                           <button class="btn btn-primary my-2 supportTicket-button">Ask Questions</button>
-                                    </p>
+                                    </p> -->
                               </div>
                         </div>
                   </div>
@@ -105,12 +125,12 @@
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                               <div class="col">
                                     <div class="card shadow-sm">
-                                          <img src="Assets/Cerakote/Screenshot 2024-01-29 at 12.23.21 PM.png" class="card-img-top" alt="" loading="">
+                                          <img src="Assets/Cerakote/Misc (1).png" class="card-img-top" alt="" loading="">
                                           <div class="card-body">
-                                                <strong>Wheels</strong>
-                                                <p class="card-text">Once-ordinary wheels are reborn with impeccable finishes, unrivaled durability, and a spectrum of colors and textures</p>
+                                                <strong>Misc</strong>
+                                                <p class="card-text"></p>
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                      <a href="Albums/Wheels.html" class="btn btn-sm btn-outline-secondary stretched-link">View</a>
+                                                      <a href="Albums/Misc cerakoting.html" class="btn btn-sm btn-outline-secondary stretched-link">View</a>
                                                       <small class="text-body-secondary">6 photos</small>
                                                 </div>
                                           </div>
@@ -125,7 +145,7 @@
                         <div class="container py-5">
                               <h1 class="display-6">Want your automotive parts cerakoted?</h1>
                               <p class="col-lg-8 mx-auto lead">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam aliquid esse similique quia minus, quos placeat numquam laudantium recusandae ut, exercitationem nesciunt quae eveniet, tempore voluptatum. Obcaecati nemo recusandae ex!
+                                    Cerakote isn't just about looks. This advanced coating provides unparalleled protection against corrosion, wear, and harsh elements. Invest in lasting performance
                               </p>
                               <a href="Contact.html" class="btn btn-outline-primary btn-lg">Get started</a>
                         </div>
@@ -133,12 +153,12 @@
             </div>
       </main>
       <footer>
-            <div class="container supportTicket shadow-lg rounded-4 px-5 py-3">
+            <div class="container supportTicket rounded-4 shadow-lg px-5 py-3">
                   <div class="row hstack">
-                        <div class="col-3"><img src="Assets/Logo.png" class="img-fluid my-4 p-2" alt="JAR Logo"></div>
+                        <div class="col-3"><img src="Assets/Wordmark.png" class="img-fluid my-4 p-2" alt="JAR Logo"></div>
                         <div class="col-8"><h3 class="display-6">Connect with us</h3></div>
                   </div>
-                  <div class="row h-50">
+                  <div class="row">
                         <form action="https://formspree.io/f/mqkrlglz" method="post" onsubmit="return antiSpam();" name = "userQuestion" class = "col-12 d-flex flex-column">
                               <input type="text" name="userName" id="userName" class="userName p-2 m-2 rounded" placeholder="Name" required>
                               <input type="email" name="userEmail" id="userEmail" class="userEmail p-2 m-2 rounded" placeholder="Email" required>
@@ -150,8 +170,8 @@
                               </div>
                         </form>
                   </div>
-                  <div class="row">
-                        <div class="col-12 d-flex flex-column my-5 p-3 text-center rounded"  style="background-color: 424242;">
+                  <div class="row my-5">
+                        <div class="col-12 d-flex flex-column p-3 text-center rounded"  style="background-color: 424242;">
                               <p> If you have questions please send your inquiry. <br> We will get back to you as soon as we can!</p>
                         </div>
                   </div>
@@ -161,7 +181,7 @@
                         <div class="col-md-6 col-sm-10">
                               <h3>Info</h3>
                               <ul>
-                                    <li><span class="badge">Hours:</span> Mon - Fri, 8:00 a.m - 4:00 p.m</li>
+                                    <li><span class="badge">Hours:</span> Mon - Fri, 8:00 a.m - 5:00 p.m</li>
                                     <li><span class="badge">Email:</span> <a href="mailto:office@jarcustoms.com">office@jarcustoms.com</a></li>
                                     <li><span class="badge">Phone:</span> (360) 718-8772</li>
                                     <li><span class="badge">Address:</span> 1119 NE 95th St. Suite A Vancouver, WA, US 98665</li>

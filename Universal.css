@@ -4,8 +4,8 @@
 body{
       background-color: #424242;
       color: #ffffff;
-      font-family: Lexend, Arial, Helvetica, sans-serif;
-      font-size: 1.2rem;;}
+      font-family: open sans, Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;}
 h1, h2, h3, h4, h5, h6{
       color: #ffffff;
 
@@ -14,20 +14,57 @@ h1, h2, h3, h4, h5, h6{
       background-color: #00b18c;
       font-size: 1em;
       margin: 0px 0px 10px 0px;}
-
-a:link{
+a{
       text-decoration: none;
+      color: #1565C0;
 }
+
+.text-primary{
+      color: #1565C0;
+}
+
+.btn-outline-primary{
+      border: 1px solid #1565C0;}
+.btn-outline-primary{
+      color: #1565C0;}
+.btn-outline-primary:hover{
+      background-color:#1565C0;
+      border: 1px solid #1565C0;}
+
+
+.btn-primary{
+      background-color: #1565C0;
+      border: 1px solid #1565C0;
+}
+.btn-primary:hover{
+      background-color: #10539e;
+      border: 1px solid #10539e;
+}
+
+
+
+
+
 
 
 .mobileNav{
       position: fixed;
       bottom: 0px;
       width: 100%;
+
       background-color: #212121;
       z-index: 10; 
-      padding: 1vmax;
-}   
+      padding: 1.5vmax;}
+.mobileNav img{
+      padding: 1.5vw;
+      width: 48px;}
+.mobileNav a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 400;}  
 @media screen and (max-width:768px){
       .desktopElement{
             display: none;
@@ -37,35 +74,100 @@ a:link{
             align-items: center;
       }
 }
-
-
-
-header nav ul .dropdown a {
+.desktopNav nav ul .dropdown a {
+      font-size: 1.25rem;}
+.desktopNav{
       font-size: 1.25rem;
-}
-header{
-      font-size: 1.25rem;
+      font-weight: bold;
       background-color: #212121;
       padding: 2vw 0vw 2vw 0vw;}
-header .row{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;}
 .navButton{
       background-color: #00b18c;
       font-weight: 400;
       border: none;}
-.navButton span{
-      font-size: 2.5em;
+.nav-link{
+      box-sizing: border-box;
+      color: #00b18c;
+      }
+.nav-link:hover{
+      border-radius: 5px;
+      color: #00b18c;
+      padding: -1px;
+      margin: -1px;
+      border: 1px solid #00b18c;}
+.current{
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: #00b18c;
+      color: #212121;}
+.current:hover{
+      border-radius: 5px;
+      box-sizing: border-box;
+      color: #212121}
+
+
+
+.galleryGrid{
+      display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-gap:15px;
+      margin: 0vh 0vh 3vh 0vh;
 }
-.mainNav .logo{
-      width: 66%;
+.gridItem img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
 }
-.mainNav img{
-      width: 48px;
+@media screen and (max-width: 468px){
+      .galleryGrid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            grid-gap:15px;
+      }
+
 }
 
 
+
+#hero .container{
+      border-radius: 15px;
+}
+@media screen and (max-width: 468px){
+      #hero .container{
+            border-radius: 0px;
+            height: 95vh;
+      }
+      #hero h1 {
+            text-align: center;
+      }
+}
+
+
+#contact input:focus{
+      box-shadow: none;
+      border: 2.5px solid #00b18c;
+}
+#contact input{
+      color: #ffffff;
+      border: 1.5px solid #00b18c;
+      background-color: #212121;
+}
+#contact input::placeholder{
+      color: #ffffff;
+}
+#contact textArea{
+      color: #ffffff;
+      border: 1.5px solid #00b18c;
+      background-color: #212121;
+}
+
+
+
+.supportButton .material-symbols-outlined{  
+      font-size: 2em;
+}
 .supportTicket{
       display: none;
       position: fixed;
@@ -80,6 +182,10 @@ header .row{
       box-shadow: none;
       outline: none;
       border: none;}
+.supportTicket input:focus{
+      box-shadow: 0px 2px 10px -2px #00b18c, 0px -2px 10px -2px #00b18c;
+      
+}
 .supportTicket input::placeholder{
       color: #ffffff;}
 .supportTicket textArea{
@@ -88,6 +194,9 @@ header .row{
       box-shadow: none;
       outline: none;
       border: none;}
+.supportTicket textArea:focus{
+      box-shadow: 0px 2px 10px -2px #00b18c, 0px -2px 10px -2px #00b18c;
+}
 .supportTicket textArea::placeholder{
       color: #ffffff;}
 .visible{
@@ -101,15 +210,6 @@ header .row{
 
 
 
-
-
-
-
-
-
-#hero h1{
-      color: #00b18c;
-}
 
 
 
@@ -162,9 +262,8 @@ header .row{
 }
 button.accordion-button{
       background: #212121;
-      border: 3px solid #00b18c;
-      color: #00b18c;
-      margin: 10px 0px 10px 0px;
+      color: #ffffff;
+      
 }
 
 
@@ -180,11 +279,18 @@ button.accordion-button{
 }
 
 .salesCard{
-
       border: 3px solid #00b18c;
 }
 
 
+@media screen and (max-width: 468px){
+      #homeUtilityNav a{
+            width: 100%;
+      }
+      #homeUtilityNav-buttons{
+            width: 75vw;
+      }
+}
 
 #socialNavCard{
       background-color: #00b18c;
